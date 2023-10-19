@@ -23,9 +23,9 @@ Criar contatos de campanha direto no painel. Ok </br>
 CallBack GerenciaNet via Insomnia. OK
 
 Midia no ChatBot. OK</br
-Kaban. OK</br
-Tarefa. OK</br
-Escutar Audios OK </br>
+Kaban. OK</br>
+Tarefa. OK</br>
+Escutar Audios OK</br>
 Localização Fixa. OK - Não funciona em tempo real, mesmo na api oficial</br>
 
 Planos Futuros:
