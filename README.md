@@ -22,7 +22,7 @@ Download e Importação de Lista de Contatos em Campanhas. OK </br>
 Criar contatos de campanha direto no painel. Ok </br>
 CallBack GerenciaNet via Insomnia. OK
 
-Midia no ChatBot. OK</br
+Midia no ChatBot. OK</br>
 Kaban. OK</br>
 Tarefa. OK</br>
 Escutar Audios OK</br>
