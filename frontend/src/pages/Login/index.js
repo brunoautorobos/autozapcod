@@ -33,11 +33,11 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		width: "100vw",
 		height: "100vh",
-		//background: "linear-gradient(to right, #191970 , #00008B , #0000FF)", //Cor de fundo
-		 backgroundImage: "url(https://equipechat.com/imagens/eu.jpg)",
-		 backgroundRepeat: "no-repeat",
-		 backgroundSize: "100% 100%",
-		 backgroundPosition: "center",
+		//background: "linear-gradient(to right, #76EE00 , #76EE00 , #458B00)",
+		backgroundImage: "url(https://media.gq.com.mx/photos/62a63e3c3e77ab160cfb843f/16:9/w_1920,c_limit/language%20model%20for%20dialogue%20applications.jpg)",
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "100% 100%",
+		backgroundPosition: "center",
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
@@ -90,7 +90,7 @@ const Login = () => {
 			<CssBaseline/>
 			<div className={classes.paper}>
 				<div>
-					<img style={{ margin: "0 auto", width: "80%" }} src={logo} alt="Whats" />
+					<img style={{ margin: "0 auto", width: "100%" }} src={logo} alt="Whats" />
 				</div>
 				<Typography component="h1" variant="h5">
 					{i18n.t("login.title")}

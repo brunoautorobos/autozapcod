@@ -17,6 +17,7 @@ const GetTicketWbot = async (ticket: Ticket): Promise<Session> => {
   }
 
   const wbot = getWbot(ticket.whatsappId);
+
   return wbot;
 };
 

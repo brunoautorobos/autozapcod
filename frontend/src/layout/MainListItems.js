@@ -401,6 +401,7 @@ const MainListItems = (props) => {
             color="inherit">
               {i18n.t("mainDrawer.listItems.administration")}
             </ListSubheader>
+            
             {showCampaigns && (
               <>
                 <ListItem
@@ -490,6 +491,7 @@ const MainListItems = (props) => {
                 primary={i18n.t("mainDrawer.listItems.financeiro")}
                 icon={<LocalAtmIcon />}
               />
+
             <ListItemLink
               to="/settings"
               primary={i18n.t("mainDrawer.listItems.settings")}

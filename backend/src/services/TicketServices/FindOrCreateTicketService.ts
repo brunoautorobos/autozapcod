@@ -99,6 +99,7 @@ const FindOrCreateTicketService = async (
       whatsappId,
       companyId
     });
+
     await FindOrCreateATicketTrakingService({
       ticketId: ticket.id,
       companyId,

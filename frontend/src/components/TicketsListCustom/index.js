@@ -246,6 +246,7 @@ const TicketsListCustom = (props) => {
       if (data.action === "removeFromList") {
         dispatch({ type: "DELETE_TICKET", payload: data.ticketId });
       }
+
     });
 
     socket.on(`company-${companyId}-appMessage`, (data) => {
@@ -286,6 +287,7 @@ const TicketsListCustom = (props) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ticketsList]);
+
 
   const loadMore = () => {
     setPageNumber((prevState) => prevState + 1);

@@ -30,19 +30,18 @@ import { i18n } from "../../translate/i18n";
 import { openApi } from "../../services/api";
 import toastError from "../../errors/toastError";
 import moment from "moment";
-import logo from "../../assets/logologin.png";
-// const Copyright = () => {
-// 	return (
-// 		<Typography variant="body2" color="textSecondary" align="center">
-// 			{"Copyleft "}
-// 			<Link color="inherit" href="https://github.com/canove">
-// 				Canove
-// 			</Link>{" "}
-// 			{new Date().getFullYear()}
-// 			{"."}
-// 		</Typography>
-// 	);
-// };
+const Copyright = () => {
+	return (
+		<Typography variant="body2" color="textSecondary" align="center">
+			{"Copyright © "}
+			<Link color="inherit" href="#">
+				AutoZap
+			</Link>{" "}
+		   {new Date().getFullYear()}
+			{"."}
+		</Typography>
+	);
+};
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -260,24 +259,12 @@ const SignUp = () => {
                                 </Grid>
                             </Form>
                         )}
-                   </Formik>
-			</div>
-			</div>
-			<a
-          href="https://autozap.app"
-          style={{
-            color: "#fff",
-            display: "flex",
-            justifyContent: "center",
-            paddingTop: "16px"
-          }}
-        >
-          AutoZap - https://autozap.app
-        </a>
-			<Box mt={5}>{/* <Copyright /> */}</Box>
-		</Container>
-		</div>
-	);
+                    </Formik>
+                </div>
+                <Box mt={5}>{/* <Copyright /> */}</Box>
+            </Container>
+        </div>
+    );
 };
 
 export default SignUp;

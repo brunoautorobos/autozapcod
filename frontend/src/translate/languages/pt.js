@@ -317,6 +317,8 @@ const messages = {
           "Nenhum atendimento encontrado com esse status ou termo pesquisado",
         buttons: {
           accept: "Aceitar",
+          closed: "Finalizar",
+          reopen: "Reabrir"
         },
       },
       newTicketModal: {

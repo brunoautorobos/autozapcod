@@ -36,7 +36,7 @@ interface Response {
   oldUserId: number | undefined;
 }
 
-const UpdateTicketService = async ({
+const   UpdateTicketService = async ({
   ticketData,
   ticketId,
   companyId
@@ -105,6 +105,7 @@ const UpdateTicketService = async ({
           await ticketTraking.update({
             ratingAt: moment().toDate()
           });
+
 
           io.to("open")
             .to(ticketId.toString())

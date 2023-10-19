@@ -656,6 +656,7 @@ export const verifyMessage = async (
   await ticket.update({
     lastMessage: body
   });
+
   await CreateMessageService({ messageData, companyId: ticket.companyId });
 
   if (!msg.key.fromMe && ticket.status === "closed") {
@@ -1774,6 +1775,7 @@ const handleMsgAck = async (
     });
 
     if (!messageToUpdate) return;
+
     await messageToUpdate.update({ ack: chat });
     io.to(messageToUpdate.ticketId.toString()).emit(
       `company-${messageToUpdate.companyId}-appMessage`,
@@ -1883,7 +1885,9 @@ const wbotMessageListener = async (wbot: Session, companyId: number): Promise<vo
           where: { id: message.key.id!, companyId }
         });
 
+
         if (!messageExists) {
+
           await handleMessage(message, wbot, companyId);
           await verifyRecentCampaign(message, companyId);
           await verifyCampaignMessageAndCloseTicket(message, companyId);
@@ -1892,6 +1896,7 @@ const wbotMessageListener = async (wbot: Session, companyId: number): Promise<vo
     });
 
     wbot.ev.on("messages.update", (messageUpdate: WAMessageUpdate[]) => {
+   
       if (messageUpdate.length === 0) return;
       messageUpdate.forEach(async (message: WAMessageUpdate) => {
         (wbot as WASocket)!.readMessages([message.key])

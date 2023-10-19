@@ -21,7 +21,8 @@ import { i18n } from "../../translate/i18n";
 import api from "../../services/api";
 import toastError from "../../errors/toastError";
 import { AuthContext } from "../../context/Auth/AuthContext";
-import { IconButton, InputAdornment } from "@material-ui/core";
+import { IconButton, InputAdornment, FormControl } from "@material-ui/core";
+
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -124,6 +125,7 @@ const TagModal = ({ open, onClose, tagId, reload, kanban }) => {
 	};
 
 	return (
+    	
 		<div className={classes.root}>
 			<Dialog
 				open={open}
@@ -197,7 +199,7 @@ const TagModal = ({ open, onClose, tagId, reload, kanban }) => {
 										margin="dense"
 									/>
 								</div>
-
+                                
 								{ colorPickerModalOpen && (
 									<div>
 										<ColorBox

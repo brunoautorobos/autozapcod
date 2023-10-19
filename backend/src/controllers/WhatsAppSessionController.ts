@@ -35,6 +35,7 @@ const update = async (req: Request, res: Response): Promise<Response> => {
 };
 
 const remove = async (req: Request, res: Response): Promise<Response> => {
+
   const { whatsappId } = req.params;
   const { companyId } = req.user;
 
@@ -46,7 +47,7 @@ const remove = async (req: Request, res: Response): Promise<Response> => {
     wbot.ws.close();
   }
 
- if(whatsapp.channel === "facebook" || whatsapp.channel === "instagram") {
+  if(whatsapp.channel === "facebook" || whatsapp.channel === "instagram") {
     whatsapp.destroy();
   }
 

@@ -82,6 +82,7 @@ const QueueModal = ({ open, onClose, queueId }) => {
     color: "",
     greetingMessage: "",
     outOfHoursMessage: "",
+
   };
 
   const [colorPickerModalOpen, setColorPickerModalOpen] = useState(false);

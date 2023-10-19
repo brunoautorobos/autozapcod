@@ -280,7 +280,7 @@ const Tags = () => {
                       size="small"
                     />
                   </TableCell>
-                  <TableCell align="center">{tag.ticketsCount}</TableCell>
+				  <TableCell align="center">{tag.ticketsCount}</TableCell>
                   <TableCell align="center">
                   <>
                   {((user.profile === "admin" || user.profile === "supervisor")) && (
@@ -302,6 +302,11 @@ const Tags = () => {
                     >
                       <DeleteOutlineIcon />
                     </IconButton>
+                    
+                    )}
+                    
+                 </>
+                 
                   </TableCell>
                 </TableRow>
               ))}
